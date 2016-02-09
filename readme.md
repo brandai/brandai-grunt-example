@@ -1,4 +1,4 @@
-Example Brand.ai sass/gulp integration
+Example Brand.ai sass/grunt integration
 ===
 
 1. Run `grunt styles` to fetch CSS styles from Brand.ai's [sample project](https://brand.ai/styleguide/acme-demo).
