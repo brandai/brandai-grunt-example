@@ -6,8 +6,5 @@ body {
 }
 
 p {
-	font-weight :$font-paragraph-font-weight;
-	color: $font-paragraph-text-color;
-	font-size: $font-paragraph-font-size;
-	font-family: $font-paragraph-font-family;
+	@include font-paragraph();
 }
