@@ -28,7 +28,11 @@ module.exports = function(grunt) {
         dest: 'tmp/icons.zip'
       }
     },
-
+    clean: {
+      icons: {
+        src: [ 'tmp/' ]
+      }
+    },
     // Unzip resources
     unzip: {
       icons: {
@@ -37,13 +41,16 @@ module.exports = function(grunt) {
       },
     }
 
+
+
   });
 
   grunt.loadNpmTasks('grunt-curl');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-zip');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.registerTask('styles', 'curl-dir:styles');
   grunt.registerTask('scss', 'sass');
-  grunt.registerTask('unzip-icons', 'curl:icons unzip:icons');
+  grunt.registerTask('unzip-icons', 'curl:icons unzip:icons clean:icons');
 };
