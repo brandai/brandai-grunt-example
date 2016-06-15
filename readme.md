@@ -8,7 +8,7 @@ Please note that variable names in style.scss are consistent with our example st
 1. run `npm install` to load project dependencies.
 
 #### Styles Integration
-1. Run `grunt styles` to fetch CSS styles from Brand.ai [sample project](https://brand.ai/styleguide/acme-demo).
+1. Run `grunt styles` to fetch CSS styles from Brand.ai [sample project](https://brand.ai/acme-demo-new/style).
 2. Run `grunt sass` to compile sass into css. 
 
 #### Icons Integration
